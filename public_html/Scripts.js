@@ -12,13 +12,15 @@ $("document").ready(function() {
     
     $('div:last p:nth-child(3)').css('background-color', 'red')
     
-    $('#oneButton').bind('click', alertButonClick);
+    $('#oneButton').bind('click', alertButtonClick);
     
     $('#textBox1').bind('blur', onBlurEvent)
                   .bind('focus', onFocusEvent)
                   .bind('onmousedown', onMDownEvent)
                   .bind('onmouseup', onMUpEvent)
                   .bind('change', onChangeEvent);
+          
+    $(window).resize(resizedWindow);
           
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
 });
@@ -30,6 +32,28 @@ function onBlurEvent()
 {
 $("#second").html("You left the box");
 }
+
+function onFocusEvent() 
+{
+$("#second").html("You entered the box");
+}
+
+function onMDownEvent() 
+{
+$("#second").html("You left the textbox");
+}
+
+function onMUpEvent() 
+{
+$("#second").html("You entered the box");
+}
+
+function onChangeEvent() 
+{
+$("#second").html("You changed the box");
+}
+
+
 
 function mouseOverMe() {
     $("h1").html("MouseOn");
