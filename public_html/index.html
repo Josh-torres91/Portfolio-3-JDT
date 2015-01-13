@@ -9,9 +9,40 @@ and open the template in the editor.
         <title>Portfolio - The Third!</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+        <link type="text/css" rel="stylesheet" href="css/Technique Squidward!!!.css">
+        <link rel="shortcut icon" href="http://http://img3.wikia.nocookie.net/__cb20100822152411/halo/images/c/c7/Noblelogo.png">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            $("document").ready(function() {
+                
+                $('deleteSpan').bind('click', deleteSpan);
+
+                $('randPara').before('<span>Before Paragraph</span>');
+
+                $('<span> Insert Before Paragraph</span>').insertBefore('#randPara');
+
+                $('<span> Prepend to Paragraph</span>').prependTo('#randPara');
+
+                $('<span> Append Before Paragraph</span>').appendTo('#randPara');
+
+                $('#randPara').append('<span>Append Paragraph</span>');
+                
+                $('<span> Insert After Paragraph</span>').insertAfter('#randPara');
+                
+                $('#randPara').after('<span> After Paragraph</span>');
+            });
+            
+            function deleteSpan()
+            {
+                $('span').remove(':contains("Append)');
+            }
+            
+        </script>
     </head>
-    <body>
+    <body id="index">
         <div class="whatdoyouwanttoput">
             <h1>Hello, go eat some BEANS!</h1>
             <p>Hi</p>
@@ -23,6 +54,58 @@ and open the template in the editor.
             <p>7</p>
             <p>8</p>
         </div>
+              <article>
+            <div style="color:#FFFFFF" class="jumbotron">About Me</div>
+            <iframe width="560" height="315" src="//www.youtube.com/embed/W9-Wk_R3SPw?list=PLn5QvCoiY3w6Jtft5dQTDRHhXnoj9vTh8" frameborder="0" allowfullscreen></iframe>
+            <!--I chose to make most of the
+            fonts white to complement the dark
+            background images.-->
+            <div style="color:#FFFFFF" class="container">
+                <p>WELCOME! The video above shows<br>
+                    one of my many likes, Halo.</p>
+                <div class="row">
+                    <div class="col-xs-10">
+                        <p></p>
+                        <div class="row">
+                            <p></p>
+                            <div class="col-xs-2">
+                                <img class="img-responsive img-rounded" alt="Responsive image" src="http://fc08.deviantart.net/fs29/f/2008/090/2/5/Bioshock_logo_by_DanteFan1.jpg">
+                                <!--I chose to use the Bioshock logo because
+                                in the original 2007 game the title screen
+                                had the same theme: Bioshock logo and the
+                                lighthouse in the background-->
+                            </div>
+                            <div class="col-xs-10">
+                                <p style="color:#FFFFFF"> My name is Joshua Torres and I'm learning computer science.</p>
+                                <p style="color:#FFFFFF"> I am a student at Pasadena High School. I've been in California for
+                                    a little over a year now. I originally came from Tennessee. I have always loved video games and
+                                    computer games. I especially love Halo. I also enjoy Call of Duty, Assassin's Creed, BioShock,
+                                    Batman: The Arkham games. Aside from video games I love to draw and read(comics). I decided to
+                                    apply for the App Academy because I saw video games and computers as more than a way out or coping mechanism,
+                                    I saw it as an art. I saw how putting together a story, art, code, and teamwork, people like you
+                                    and me can achieve what we call a video game and I wanted to learn how to make such masterpieces.
+                                    Here's a link to the App Academy for more info:<br>
+                                    <a class="uppercase" href="http://theappacademy.us">App Academy</a>.</p>
+                                <!--I decided to keep the same text for the
+                                About Me paragraph because I really liked how it
+                                represented me-->   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                        <nav class="navbar navbar-inverse" role="navigation">
+                            <a href="index.html">About Me</a>
+                            <a href="projects.html">Projects</a>
+                            <a href="technology.html">Technology</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <form action="">
+            <button type="button" id="deleteSpan">Delete Span</button>
+            
+        </form>
         <script type="text/javascript" src="scripts.js"></script>
     </body>
 </html>
