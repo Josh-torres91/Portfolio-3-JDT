@@ -47,7 +47,7 @@ $("document").ready(function() {
             .bind('onmouseup', onMUpEvent)
             .bind('change', onChangeEvent);
 
-    $(window).resize(resizedWindow);
+//    $(window).resize(resizedWindow);
 
     $('logo').bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
 
@@ -76,16 +76,18 @@ $("document").ready(function() {
     
     $('#show').css('visibility','visible');
     
+    $('#superHumans').accordion({header: "h4"});
+    
 });
 function deleteSpan()
 {
     $('span').remove(':contains("Append)');
 }
 
-function resizedWinidow() {
-    $("#second").html("Window was resized W:" + $(window).width() + "H:" +
-            $(window).height());
-}
+//function resizedWinidow() {
+//    $("#second").html("Window was resized W:" + $(window).width() + "H:" +
+//            $(window).height());
+//}
 
 function replaceWHtml() {
     $('#h3Tag').html('<h6>Now I\'m an h6</h6>');

@@ -1,0 +1,86 @@
+div{
+    padding: 30px;
+    padding-left: 5px;
+    padding-right:5px;
+    font-size: 18px;
+}
+
+body{
+    font-size: 20px;
+    margin: 0;
+}
+
+.container{
+
+}
+
+.row{
+    background-color: black;
+    text-align: center;
+    padding-right: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#index{
+    background-color: #2A2C30;
+}
+
+#projects{
+    background-color: #2A2C30;
+    background-size: cover;
+    height: 350px;
+    width: auto;
+}
+
+#technology{
+    background-color: #2A2C30;
+    background-size: cover;
+    height: 350px; 
+    width: 500px;
+}
+img{
+    width: 50px;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.jumbotron{
+    text-align: center;
+    font-size: 46px;
+    background-image: url(http://www.kekaiart.com/uploads/5/4/7/6/5476798/3045979_orig.jpg);
+    background-size: cover;
+    height: 500px;
+    width: auto;
+}
+
+body{
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: 24px;
+    text-align: center;
+}
+
+iframe {
+    padding: 20px;
+    padding-left: 20px;
+    margin: 20px;
+    border: 5px groove;
+    border-color: deepskyblue;
+    border-left-color: dodgerblue;
+    border-bottom-color: dodgerblue;
+}
+
+nav {
+    text-align: right;
+    text-decoration-style: double;
+    height: 50px;
+    width: auto;
+    font: arial;
+    margin-right: 5px;
+}
+
