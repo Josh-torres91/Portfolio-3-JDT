@@ -11,19 +11,19 @@ $("document").ready(function() {
 
     $('deleteSpan').bind('click', deleteSpan);
 
-    $('randPara').before('<span>Before Paragraph</span>');
+    //$('randPara').before('<span>Before Paragraph</span>');
 
-    $('<span> Insert Before Paragraph</span>').insertBefore('#randPara');
+    //$('<span> Insert Before Paragraph</span>').insertBefore('#randPara');
 
-    $('<span> Prepend to Paragraph</span>').prependTo('#randPara');
+    //$('<span> Prepend to Paragraph</span>').prependTo('#randPara');
 
-    $('<span> Append Before Paragraph</span>').appendTo('#randPara');
+    //$('<span> Append Before Paragraph</span>').appendTo('#randPara');
 
-    $('#randPara').append('<span>Append Paragraph</span>');
+   // $('#randPara').append('<span>Append Paragraph</span>');
 
-    $('<span> Insert After Paragraph</span>').insertAfter('#randPara');
+    //$('<span> Insert After Paragraph</span>').insertAfter('#randPara');
 
-    $('#randPara').after('<span> After Paragraph</span>');
+    //$('#randPara').after('<span> After Paragraph</span>');
 
     $('#theBody').bind('keyup', checkKeyPressed).bind('mousemove', theMouseMoved).click(event, eventTriggered);
 
@@ -61,8 +61,12 @@ $("document").ready(function() {
     $('#addBefore').bind('click', addBefore);
     $('#addAfter').bind('click', addAfter);
     $('#addToTextBox').bind('click', addToTextBox);
+    
+    $('#slideAway').bind('click', slideTheImage);
+    $('#slideBack').bind('click', unslideTheImage);
+    
 
-    $('#twoButton').bind('dbclick', dblClickedMe);
+    //$('#twoButton').bind('dbclick', dblClickedMe);
 
     $("form").submit(function() {
         alert("Submit button clicked");
@@ -72,9 +76,8 @@ $("document").ready(function() {
     
     $('#show').css('visibility','visible');
     
-    $('#show').css('visibility','visible');
-    
-    $('#show').css('visibility','visible');
+    $('#show').bind();
+    $('#hide').bind()
     
     $('#superHumans').accordion({header: "h4"});
     
@@ -94,7 +97,7 @@ function replaceWHtml() {
 }
 
 function replaceWText() {
-    $('#randPara').appen('<h6>Now I\'m an h6</h6>');
+    $('#randPara').append('<h6>Now I\'m an h6</h6>');
 }
 
 function addAPara() {
@@ -154,15 +157,11 @@ function dblClickedMe() {
 }
 
 function mouseOverMe() {
-    $("h1").html("MouseOn");
-    $("p").html("I'm Frogsworth!!!");
-    $("#second").html("You put your cursor on my logo");
+    $("h1").text("MouseOn");
 }
 
 function mouseOutMe() {
-    $('.2').css('visibility', 'hidden');
-    $('.1').css('visibility', 'visible');
-    $("#second").html("You stopped touching my logo");
+    $("h1").text("stopped touching my logo");
 }
 
 function unbindLogo()
@@ -263,3 +262,4 @@ function showThePage() {
     $('#show').hide('puff', {}, 2500);
 }
 
+   
