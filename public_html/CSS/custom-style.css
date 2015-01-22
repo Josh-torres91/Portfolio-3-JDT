@@ -24,32 +24,53 @@ body{
 
 #projects{
     background-color: #2A2C30;
-    background-size: cover;
-    height: 350px;
-    width: auto;
 }
 
 #technology{
     background-color: #2A2C30;
-    background-size: cover;
-    height: 350px; 
-    width: 500px;
 }
+
+#JQuery{
+    background-color: #2A2C30;
+}
+
+
+#brand{
+    width: 30px;
+}
+
 img{
-    width: 50px;
+    width: 300px;
     height: auto;
-    padding-top: 0px;
-    padding-bottom: 5px;
-    padding-left: 5px;
+    border-style: ridge;
+    border-color: blue;
 }
 
 .jumbotron{
     text-align: center;
     font-size: 46px;
-    background-image: url(http://www.kekaiart.com/uploads/5/4/7/6/5476798/3045979_orig.jpg);
     background-size: cover;
     height: 500px;
     width: auto;
+    border-bottom: #000;
+    border-bottom-style: groove;
+    border-width: 10px;
+}
+
+#jumboIndex{
+    background-image: url(http://destiny.bungie.org/galleries/announce_assets/lg/dark-patrol.jpg);
+}
+
+#jumboPro{
+    background-image: url(http://i.imgur.com/j8MEntf.jpg);
+}
+
+#jumboTech{
+    background-image: url(http://www.itsartmag.com/features/itsart/wp-content/uploads/2013/06/Destiny-Concept-Art-10.jpg);
+}
+
+#jumboJQuery{
+     background-image: url(http://conceptartworld.com/wp-content/uploads/2014/09/Destiny_Concept_Art_Darren_Bacon_004.jpg);
 }
 
 body{
@@ -59,6 +80,7 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-size: 24px;
     text-align: center;
+    text-decoration-color: black;
 }
 
 iframe {
@@ -72,11 +94,9 @@ iframe {
 }
 
 nav {
-    text-align: right;
+    text-align: center;
     text-decoration-style: double;
     height: 50px;
     width: auto;
     font: arial;
-    margin-right: 5px;
 }
-

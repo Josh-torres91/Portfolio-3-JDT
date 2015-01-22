@@ -5,25 +5,11 @@
  */
 
 $("document").ready(function() {
-    $(".whatdoyouwanttoput").css("background-color", "orange");
+    $(".whatdoyouwanttoput").css("background-color", "#2A2C30");
     
-    $("p").css({"background-color": "blue", "color": "white"});
+    $("p").css({"background-color": "darkblue", "color": "white"});
 
     $('deleteSpan').bind('click', deleteSpan);
-
-    //$('randPara').before('<span>Before Paragraph</span>');
-
-    //$('<span> Insert Before Paragraph</span>').insertBefore('#randPara');
-
-    //$('<span> Prepend to Paragraph</span>').prependTo('#randPara');
-
-    //$('<span> Append Before Paragraph</span>').appendTo('#randPara');
-
-   // $('#randPara').append('<span>Append Paragraph</span>');
-
-    //$('<span> Insert After Paragraph</span>').insertAfter('#randPara');
-
-    //$('#randPara').after('<span> After Paragraph</span>');
 
     $('#theBody').bind('keyup', checkKeyPressed).bind('mousemove', theMouseMoved).click(event, eventTriggered);
 
@@ -47,8 +33,6 @@ $("document").ready(function() {
             .bind('onmouseup', onMUpEvent)
             .bind('change', onChangeEvent);
 
-//    $(window).resize(resizedWindow);
-
     $('logo').bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
 
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
@@ -60,8 +44,7 @@ $("document").ready(function() {
     $('#lastIsFirst').bind('click', lastIsFirst);
     $('#addBefore').bind('click', addBefore);
     $('#addAfter').bind('click', addAfter);
-    $('#addToTextBox').bind('click', addToTextBox);
-    
+    $('#addToTextBox').bind('click', addToTextBox);   
     $('#slideAway').bind('click', slideTheImage);
     $('#slideBack').bind('click', unslideTheImage);
     
@@ -101,7 +84,7 @@ function replaceWText() {
 }
 
 function addAPara() {
-    $('#randPara').append('<p>Another paragraph</p>');
+    $('#randPara').append('<p>Eat Waffle!</p>');
 }
 
 function removeAPara() {
@@ -161,7 +144,7 @@ function mouseOverMe() {
 }
 
 function mouseOutMe() {
-    $("h1").text("stopped touching my logo");
+    $("h1").text("Stop touching that pheasant!!!");
 }
 
 function unbindLogo()
@@ -214,10 +197,6 @@ function slideTheImage() {
     $('#second').slideUp(2500);
 }
 
-function slideTheImage() {
-    $('#second').slideUp(2500);
-}
-
 function unslideTheImage() {
     $('#second').slideDown(2500);
 }
@@ -252,14 +231,14 @@ function sizeLogo() {
 }
 
 function hideThePage() {
-    $('#show').css('visibility','visible');
+    $('#hide').css('visibility','visible');
     $('div').hide('slide', {}, 2500);
-    $('#show').show('fold', {}, 2500);
+    $('#hide').show('fold', {}, 2500);
 }
 
 function showThePage() {
-    $('div').show('fold',{}, 2500);
-    $('#show').hide('puff', {}, 2500);
+    $('#show').show('fold',{}, 2500);
+    $('#hide').hide('puff', {}, 2500);
 }
 
    
